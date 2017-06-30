@@ -22,7 +22,7 @@ spec:
       containers:
       - name: get-ip-server
         #image: ${GCR_TAG}:${WERCKER_GIT_COMMIT}
-        image: aamgupta/testrepo:${WERCKER_GIT_COMMIT}
+        image: ${DOCKERHUB_REPO}:${WERCKER_GIT_COMMIT}
         ports:
         - name: get-ip-server
           containerPort: 8080
